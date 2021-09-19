@@ -1,0 +1,57 @@
+.header{
+  background-color: #1CAC78;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  width: 100%;
+}
+.header h1{
+  font-size: 3rem;
+  color: #006A4E;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+form input[type=text] {
+  width: 10%;
+  height: 1.5rem;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid grey;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 30%;
+}
+.search-btn{
+  background-color: #006A4E;
+  border: none;
+  color: #1CAC78;
+  border-radius: 0 10px 10px 0;
+  font-size: medium;
+}
+.recepi_section{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px){
+  .recepi_section{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  form input[type=text] {
+  width: 30%;}
+  input[type=text]:focus {
+  width: 90%;
+}
+    }
